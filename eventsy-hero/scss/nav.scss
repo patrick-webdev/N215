@@ -1,0 +1,29 @@
+nav{
+  width: 980px;
+  height: 92px;
+  border-bottom: 2px solid $site-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navLogo{
+    width: 92px;
+    height: 42px;
+  }
+
+  .navLinks{
+    a{
+      color: $site-white;
+      font-size: 15px;
+      text-decoration: none;
+      text-transform: lowercase;
+    }
+
+    span{
+      margin: 0 10px;
+      color: $site-pink;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}

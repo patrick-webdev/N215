@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  font-family: 'Corbel'; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px; }
+
+.hero-wrapper {
+  height: 500px;
+  width: 100%;
+  background-color: #FFD140; }
+  .hero-wrapper .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 1280px;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 209, 64, 0.8)), to(rgba(255, 209, 64, 0.8))), url("../img/home-hero.jpg");
+    background-image: -webkit-linear-gradient(left, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url("../img/home-hero.jpg");
+    background-image: -o-linear-gradient(left, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url("../img/home-hero.jpg");
+    background-image: linear-gradient(to right, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url("../img/home-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .hero-wrapper .callout {
+    margin-top: 90px;
+    width: 416px;
+    min-height: 200px;
+    text-align: center; }
+    .hero-wrapper .callout h1 {
+      color: #fff; }
+    .hero-wrapper .callout p {
+      color: #fff;
+      margin-bottom: 50px;
+      font-style: italic; }
+    .hero-wrapper .callout .sub-header {
+      color: #EE4367;
+      margin-bottom: 50px;
+      font-style: italic; }
+    .hero-wrapper .callout .site-button {
+      padding: 10px 25px;
+      background-color: #EE4367;
+      color: #fff;
+      text-decoration: none; }
+
+nav {
+  width: 980px;
+  height: 92px;
+  border-bottom: 2px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  nav .navLogo {
+    width: 92px;
+    height: 42px; }
+  nav .navLinks a {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: lowercase; }
+  nav .navLinks span {
+    margin: 0 10px;
+    color: #EE4367;
+    font-size: 20px;
+    font-weight: bold; }
