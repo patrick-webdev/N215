@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  font-family: 'Gill Sans', 'Lucida Sans Unicode', Arial, sans-serif; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px; }
+
+.hero-container {
+  height: 500px;
+  width: 100%;
+  background-color: #79ADDC; }
+  .hero-container .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 1280px;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/hero.jpg");
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero.jpg");
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero.jpg");
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+.callout {
+  margin-top: 70px;
+  width: 498px;
+  min-height: 200px;
+  text-align: center;
+  color: #FFF; }
+  .callout .title {
+    font-size: 60px;
+    font-family: "Proxima Nova ScOsf Extra Condensed", 'Gill Sans', 'Lucida Sans Unicode', Arial, sans-serif; }
+  .callout .callout-para {
+    margin-bottom: 50px;
+    font-style: italic;
+    font-size: 20px; }
+  .callout .site-button {
+    padding: 10px 25px;
+    background-color: #79ADDC;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px; }
+
+nav {
+  width: 980px;
+  height: 92px;
+  border-bottom: 2px solid #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.navLogo {
+  width: 92px;
+  height: 38px;
+  border: 2px solid #FFF;
+  position: relative; }
+
+.logoImg {
+  bottom: -9px;
+  left: 5px;
+  position: absolute;
+  white-space: nowrap;
+  font-size: 20px;
+  color: #FFF; }
+
+.navLinks a {
+  color: #FFF;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: lowercase; }
+
+.navLinks span {
+  margin: 0 9px;
+  color: #79ADDC;
+  font-size: 20px; }
