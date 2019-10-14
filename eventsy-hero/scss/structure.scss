@@ -6,9 +6,45 @@
 
 html, body{
   height: 100%;
-  font-family: 'Corbel';
+  font-family: Arial, 'Lucida Sans Unicode', 'Corbel', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p{
   margin-bottom: 16px;
+}
+
+.inputs{
+  height: 455px;
+  background-color: $site-pink;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+
+  input{
+    height: 60px;
+    width: 529px;
+    font-size: 16px;
+    padding-left: 15px;
+    background-color: $site-input-bg;
+    //color: rgba($site-white, 0.5);
+    color: $site-white;
+    border: none;
+
+    &:focus{
+      outline: none;
+    }
+
+    &::placeholder{
+      color: rgba($site-white, 0.5);
+    }
+  }
+
+  .submit-button{
+    width: 167px;
+    height: 60px;
+    background-color: $site-white;
+    color: $site-pink;
+    text-transform: uppercase;
+    margin-left: -4px;
+  }
 }

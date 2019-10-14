@@ -1,0 +1,70 @@
+.upcoming-events{
+  height: 320px;
+  background-color: $site-purple;
+  color: white;
+
+  .event-container{
+    @include center-content();
+    padding: 50px 40px;
+
+    .event-title{
+      text-transform: uppercase;
+      font-size: 25px;
+    }
+
+    .event-underline{
+      width: 392px;
+      height: 2px;
+      background-color: $site-white;
+    }
+
+    .event-list-container{
+      height: 124px;
+      margin-top: 34px;
+      justify-content: space-between;
+      display: flex;
+
+      .event{
+        height: 100%;
+        width: 220px;
+        justify-content: space-between;
+        display: flex;
+
+        .date{
+          width: 60px;
+          height: 60px;
+          background-color: $site-pink;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .day{
+            font-size: 22px;
+            margin-bottom: 0px;
+          }
+          .month{
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-bottom: 0px;
+          }
+        }
+
+        .event-text-container{
+          width: 140px;
+          height: 100%;
+
+          .text-container-subject{
+            font-size: 15px;
+          }
+
+          .text-container-description{
+            font-size: 13px;
+            color: $site-pink;
+          }
+        }
+      }
+    }
+
+  }
+}
