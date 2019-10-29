@@ -1,0 +1,94 @@
+.booking-form-container{
+  width: 100%;
+  background-color: $color-blue;
+  display: flex;
+  justify-content: center;
+}
+
+.form-twelveeighty{
+  width: 1280px;
+  background-color: $color-white;
+  padding-bottom: 100px;
+}
+
+.booking-form{
+  width: 818px;
+  @include center-content();
+  //display: flex;
+  //justify-content: center;
+  //background-color: red;
+
+  .booking-form-title{
+    font-size: 60px;
+    font-family: "Roboto";
+  }
+
+  .form-input{
+    height: 58px;
+    border-style: solid;
+    border-color: $color-blue;
+    font-size: 15px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-width: 1px;
+  }
+
+  #input-name, #input-country{
+    width: 344px;
+    margin-right: 15px;
+  }
+
+  #input-email, #input-hotel{
+    width: 453px;
+  }
+
+  .check-label{
+    width: 120px;
+    display: flex;
+    background-color: red;
+  }
+
+  .check-in-out{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+
+  #input-check-in, #input-check-out{
+    width: 698px;
+  }
+
+  .input-counts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .count-dropdown{
+      width: 103px;
+      margin-left: 76px;
+    }
+  }
+
+  #input-message{
+    width: 818px;
+    height: 192px;
+    display: block;
+  }
+
+  .submit-booking-form{
+    @include center-content();
+    color: $color-white;
+    $text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    font-size: 15px;
+    display: inline-block;
+    height: 60px;
+    width: 813px;
+    background-color: $color-blue;
+    border-radius: 25px;
+  }
+}

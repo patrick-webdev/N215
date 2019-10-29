@@ -1,0 +1,14 @@
+@mixin center-content($width: $site-full-width, $margin: 0 auto){
+  width: $width;
+  margin: $margin;
+}
+
+@mixin tour-background($image){
+  background-image:
+    linear-gradient(
+      to right,
+      rgba($color-black, 0.3),
+      rgba($color-black, 0.3)
+    ),
+    url("../images/tour/" + $image);
+}
