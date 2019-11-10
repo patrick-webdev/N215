@@ -1,0 +1,40 @@
+nav{
+  width: 980px;
+  height: 92px;
+  border-bottom: 2px solid $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLogo{
+  width: 92px;
+  height: 38px;
+  border: 2px solid $color-white;
+  position: relative;
+}
+
+.logoImg{
+  bottom: -5px;
+  left: 14px;
+  position: absolute;
+  white-space: nowrap;
+
+  font-size: 20px;
+  color: $color-white;
+}
+
+.navLinks{
+  a{
+    color: $color-white;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+
+  span{
+    margin: 0 9px;
+    color: $color-blue;
+    font-size: 20px;
+  }
+}

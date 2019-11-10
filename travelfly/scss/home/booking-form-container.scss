@@ -6,15 +6,19 @@
 }
 
 .form-twelveeighty{
-  width: 1280px;
+  //width: 1280px;
+  width: 100%;
   background-color: $color-white;
   padding-bottom: 100px;
 }
 
 .booking-form{
-  width: 818px;
+  //width: 818px;
+  widtH: 43%;
+  //background-color: blue;
   @include center-content();
-  //display: flex;
+  display: flex;
+  flex-direction: column;
   //justify-content: center;
   //background-color: red;
 
@@ -34,12 +38,14 @@
   }
 
   #input-name, #input-country{
-    width: 344px;
+    //width: 344px;
+    width: 42%;
     margin-right: 15px;
   }
 
   #input-email, #input-hotel{
-    width: 453px;
+    //width: 453px;
+    width: 55%;
   }
 
   .check-label{
@@ -56,7 +62,8 @@
   }
 
   #input-check-in, #input-check-out{
-    width: 698px;
+    //width: 698px;
+    width: 85%;
   }
 
   .input-counts{
@@ -90,5 +97,35 @@
     width: 813px;
     background-color: $color-blue;
     border-radius: 25px;
+  }
+}
+
+@media (max-width: 870px){
+  .form-twelveeighty{
+    //padding: 0 20px;
+
+    .booking-form{
+      //background-color: red;
+      width: 100%;
+      padding: 20px 20px;
+
+      #input-name, #input-email, #input-country, #input-hotel, #input-message, .submit-booking-form{
+        width: 100%;
+      }
+
+      #input-check-in, #input-check-out{
+        width: 80%;
+      }
+
+      .input-counts{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .adult-count, .children-count, .room-count{
+        width: 30%;
+      }
+    }
   }
 }

@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    width: 1280px;
+    width: 100%;
     height: 100%;
     background-image:
       linear-gradient(
@@ -48,5 +48,11 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
+  }
+}
+
+@media (max-width: 600px){
+  .callout{
+    padding: 0 20px;
   }
 }
