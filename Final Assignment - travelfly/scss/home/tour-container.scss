@@ -1,0 +1,101 @@
+.tour-container{
+  width: 100%;
+  //background-color: $color-blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 400px;
+
+  .tours{
+    width: 1280px;
+    // width: 100%;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .tour-israel{
+    @include tour-background("tour-01.jpg");
+  }
+
+  .tour-usa{
+    @include tour-background("tour-02.jpg");
+  }
+
+  .tour-australia{
+    @include tour-background("tour-03.jpg");
+  }
+
+  .tour{
+    height: 304px;
+    width: 236px;
+    margin: 0 auto;
+    margin-top: -43px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: $color-white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    //text-align: center;
+
+    .location-price{
+      margin-top: 37px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Roboto";
+
+      .location{
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 100;
+      }
+
+      .price{
+        font-size: 30px;
+      }
+    }
+
+    .tour-button{
+      background-color: $color-blue;
+      display: block;
+      height: 40px;
+      width: 133px;
+      border: none;
+      border-radius: 25px;
+      color: $color-white;
+      text-decoration: none;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-bottom: 56px;
+    }
+
+  }
+}
+
+//Viewport sizes used by Bootstrap and recommended by Adobe.
+//https://getbootstrap.com/docs/4.4/layout/overview/
+//https://docs.adobe.com/content/help/en/target/using/experiences/vec/mobile-viewports.html
+
+//Large tablet
+@media screen and (max-width: 991px){
+
+}
+
+//Medium tablet
+@media screen and (max-width: 767px){
+
+}
+
+@media screen and (max-width: 576px){
+  .tour-container{
+    display: none;
+  }
+}

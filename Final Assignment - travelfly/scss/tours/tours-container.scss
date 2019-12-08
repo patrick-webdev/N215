@@ -1,0 +1,158 @@
+.tours-container{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .tours-header{
+    width: 80%;
+    height: 200px;
+    margin-top: 27.5px;
+    @include tour-background("tours-header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+      font-family: "Roboto";
+      font-size: 60px;
+      font-weight: 100;
+      color: $color-white;
+      text-transform: uppercase;
+    }
+  }
+
+  #tour{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+
+    .location-price{
+      height: 304px;
+      width: 236px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin: 27.5px;
+    }
+
+    .tour-israel{
+      @include tour-background("tour-01.jpg");
+    }
+
+    .tour-usa{
+      @include tour-background("tour-02.jpg");
+    }
+
+    .tour-aus{
+      @include tour-background("tour-03.jpg");
+    }
+
+    .tour-nz{
+      @include tour-background("tour-04.jpg");
+    }
+
+    .tour-france{
+      @include tour-background("tour-05.jpg");
+    }
+
+    .tour-egypt{
+      @include tour-background("tour-06.jpg");
+    }
+
+    .tour-japan{
+      @include tour-background("tour-07.jpg");
+    }
+
+    .tour-canada{
+      @include tour-background("tour-08.jpg");
+    }
+
+    .tour-uae{
+      @include tour-background("tour-09.jpg");
+    }
+
+    .location-price-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 37px;
+      .location{
+        text-transform: capitalize;
+        color: $color-white;
+        font-size: 40px;
+        font-weight: 100;
+      }
+
+      .price{
+        color: $color-white;
+        font-size: 30px;
+        margin-top: 10px;
+
+      }
+    }
+
+    .tour-button{
+      background-color: $color-blue;
+      display: block;
+      height: 40px;
+      width: 133px;
+      border: none;
+      border-radius: 25px;
+      color: $color-white;
+      text-decoration: none;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-bottom: 56px;
+    }
+  }
+}
+
+//Viewport sizes used by Bootstrap and recommended by Adobe.
+//https://getbootstrap.com/docs/4.4/layout/overview/
+//https://docs.adobe.com/content/help/en/target/using/experiences/vec/mobile-viewports.html
+
+//Large tablet
+@media screen and (max-width: 991px){
+
+}
+
+//Medium tablet
+@media screen and (max-width: 767px){
+  .tours-container{
+    .tours-header{
+      p{
+      }
+    }
+
+    #tour{
+      width: 80%;
+      .location-price{
+      }
+
+      .location-price-container{
+        .location{
+        }
+
+        .price{
+        }
+      }
+
+      .tour-button{
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px){
+
+}

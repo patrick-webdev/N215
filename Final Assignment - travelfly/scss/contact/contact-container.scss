@@ -1,0 +1,185 @@
+.contact-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .contact-container-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 10em;
+
+    .page-title{
+      margin: 2em 0;
+      text-transform: uppercase;
+      font-size: 30px;
+      font-family: "Roboto";
+
+      .underline{
+        border-bottom: 2px solid $color-black;
+      }
+    }
+
+    .contact-content{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .map-address-container{
+        display: flex;
+        flex-direction: column;
+
+        img{
+          width: 440px;
+          height: 440px;
+          object-fit: cover;
+        }
+
+        .phone-address{
+          margin-top: 2em;
+
+          p{
+            font-size: 18px;
+            margin-bottom: 4px;
+          }
+        }
+      }
+
+      .contact-form{
+        width: 60%;
+        form{
+          display: flex;
+          flex-direction: column;
+          .form-line{
+            background-color: $color-gray;
+            border: none;
+            height: 60px;
+            margin-bottom: 20px;
+            padding-left: 15px
+          }
+
+          .form-block{
+            background-color: $color-gray;
+            border: none;
+            height: 200px;
+            margin-bottom: 20px;
+            padding: 15px;
+          }
+
+          .form-button{
+            width: 167px;
+            height: 60px;
+            background-color: $color-blue;
+            border: none;
+            color: $color-white;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Viewport sizes used by Bootstrap and recommended by Adobe.
+//https://getbootstrap.com/docs/4.4/layout/overview/
+//https://docs.adobe.com/content/help/en/target/using/experiences/vec/mobile-viewports.html
+
+//Large tablet
+@media screen and (max-width: 991px){
+  .contact-container{
+
+    .contact-container-content{
+
+      .page-title{
+
+        .underline{
+        }
+      }
+
+      .contact-content{
+
+        .map-address-container{
+          margin-right: 1em;
+
+          img{
+            width: 300px;
+            height: 300px;
+          }
+
+          .phone-address{
+
+            p{
+            }
+          }
+        }
+
+        .contact-form{
+          width: 100%;
+          form{
+            .form-line{
+            }
+
+            .form-block{
+            }
+
+            .form-button{
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Medium tablet
+@media screen and (max-width: 767px){
+
+}
+
+@media screen and (max-width: 576px){
+  .contact-container{
+
+    .contact-container-content{
+
+      .page-title{
+
+        .underline{
+        }
+      }
+
+      .contact-content{
+        flex-direction: column-reverse;
+
+        .map-address-container{
+
+          img{
+            display: none;
+          }
+
+          .phone-address{
+            text-align: center;
+            p{
+            }
+          }
+        }
+
+        .contact-form{
+          form{
+            align-items: center;
+
+            .form-line{
+              width: 100%;
+            }
+
+            .form-block{
+              width: 100%;
+            }
+
+            .form-button{
+            }
+          }
+        }
+      }
+    }
+  }
+}

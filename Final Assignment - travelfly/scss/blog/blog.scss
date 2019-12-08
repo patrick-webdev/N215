@@ -1,0 +1,196 @@
+.blog-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .page-title{
+    margin-top: 1.5em;
+    width: 80%;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-size: 30px;
+
+    .underline{
+      border-bottom: 2px solid $color-black;
+    }
+  }
+
+  .blog-post{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+
+    .date-header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 1em;
+
+      .date{
+        background-color: $color-blue;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .day{
+          color: $color-white;
+          font-weight: bold;
+          font-size: 22px;
+          margin: 0;
+        }
+        .month{
+          color: $color-white;
+          text-transform: uppercase;
+          font-size: 12px;
+          margin: 0;
+        }
+      }
+
+      .blog-header{
+        width: 95%;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+
+    .blog-content{
+      margin-left: 5%;
+
+      .blog-title{
+        font-size: 15px;
+        //margin-bottom: 1em;
+      }
+      .blog-subtitle{
+        font-size: 13px;
+        color: $color-blue;
+        margin-right: 60%;
+      }
+    }
+  }
+}
+
+//Viewport sizes used by Bootstrap and recommended by Adobe.
+//https://getbootstrap.com/docs/4.4/layout/overview/
+//https://docs.adobe.com/content/help/en/target/using/experiences/vec/mobile-viewports.html
+
+//Large tablet
+@media screen and (max-width: 991px){
+  .blog-container{
+
+    .page-title{
+
+      .underline{
+      }
+    }
+
+    .blog-post{
+
+      .date-header{
+
+        .date{
+
+          .day{
+          }
+          .month{
+          }
+        }
+
+        .blog-header{
+          width: 90%;
+        }
+      }
+
+      .blog-content{
+        margin-left: 10%;
+
+        .blog-title{
+        }
+        .blog-subtitle{
+          margin-right: 40%;
+        }
+      }
+    }
+  }
+}
+
+//Medium tablet
+@media screen and (max-width: 767px){
+  .blog-container{
+
+    .page-title{
+
+      .underline{
+      }
+    }
+
+    .blog-post{
+
+      .date-header{
+        flex-direction: column;
+        .date{
+
+          .day{
+          }
+          .month{
+          }
+        }
+
+        .blog-header{
+        }
+      }
+
+      .blog-content{
+        margin-left: 0;
+
+        .blog-title{
+        }
+        .blog-subtitle{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px){
+  .blog-container{
+
+    .page-title{
+
+      .underline{
+      }
+    }
+
+    .blog-post{
+
+      .date-header{
+        flex-direction: column;
+        .date{
+
+          .day{
+          }
+          .month{
+          }
+        }
+
+        .blog-header{
+        }
+      }
+
+      .blog-content{
+        margin-left: 0;
+
+        .blog-title{
+        }
+        .blog-subtitle{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

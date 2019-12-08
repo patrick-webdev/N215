@@ -1,0 +1,69 @@
+.client-quotes-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
+  margin-bottom: 10%;
+
+  .client-quotes-title{
+    font-family: "Roboto";
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+    width: 80%;
+
+    .underline{
+      border-bottom: 2px solid $color-black;
+    }
+  }
+
+  .image-quote{
+    margin-top: 3%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+
+    img{
+      height: 150px;
+      width: 260px;
+      object-fit: cover;
+    }
+
+    .quote-container{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 1.5em;
+
+      .quote{
+        font-style: italic;
+      }
+      .name{
+        text-align: right;
+        color: $color-blue;
+        font-size: 20px
+      }
+    }
+  }
+
+}
+
+//Viewport sizes used by Bootstrap and recommended by Adobe.
+//https://getbootstrap.com/docs/4.4/layout/overview/
+//https://docs.adobe.com/content/help/en/target/using/experiences/vec/mobile-viewports.html
+
+//Large tablet
+@media screen and (max-width: 991px){
+
+}
+
+//Medium tablet
+@media screen and (max-width: 767px){
+
+}
+
+@media screen and (max-width: 576px){
+
+}

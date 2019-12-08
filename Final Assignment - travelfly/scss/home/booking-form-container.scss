@@ -1,0 +1,182 @@
+.booking-form-container{
+  width: 100%;
+  background-color: $color-blue;
+  display: flex;
+  justify-content: center;
+
+  .form-twelveeighty{
+    //width: 1280px;
+    width: 100%;
+    background-color: $color-white;
+    padding-bottom: 100px;
+
+    .booking-form{
+      //width: 818px;
+      widtH: 43%;
+      //background-color: blue;
+      @include center-content();
+      display: flex;
+      flex-direction: column;
+      //justify-content: center;
+      //background-color: red;
+
+      .booking-form-title{
+        font-size: 60px;
+        font-family: "Roboto";
+      }
+
+      .inputs-container{
+        .form-input{
+          height: 58px;
+          border-style: solid;
+          border-color: $color-blue;
+          font-size: 15px;
+          padding-left: 20px;
+          margin-bottom: 20px;
+          border-width: 1px;
+        }
+
+        #input-name, #input-country{
+          //width: 344px;
+          width: 42%;
+          margin-right: 15px;
+        }
+
+        #input-email, #input-hotel{
+          //width: 453px;
+          width: 55%;
+        }
+
+        .check-in-out{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 18px;
+
+          #input-check-in, #input-check-out{
+            //width: 698px;
+            width: 85%;
+          }
+        }
+
+        .input-counts{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+
+          .count-container{
+            .count-dropdown{
+              width: 103px;
+              margin-left: 76px;
+            }
+          }
+        }
+
+        #input-message{
+          width: 100%;
+          height: 192px;
+          display: block;
+        }
+      }
+
+      .submit-booking-form{
+        @include center-content();
+        color: $color-white;
+        $text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        border: none;
+        font-size: 15px;
+        display: inline-block;
+        height: 60px;
+        width: 100%;
+        background-color: $color-blue;
+        border-radius: 25px;
+      }
+    }
+  }
+}
+
+//Viewport sizes used by Bootstrap and recommended by Adobe.
+//https://getbootstrap.com/docs/4.4/layout/overview/
+//https://docs.adobe.com/content/help/en/target/using/experiences/vec/mobile-viewports.html
+
+//Large tablet
+@media screen and (max-width: 991px){
+  .booking-form-container{
+
+    .form-twelveeighty{
+
+      .booking-form{
+        width: 90%;
+
+        .booking-form-title{
+        }
+
+        .inputs-container{
+          .form-input{
+          }
+
+          #input-name, #input-country{
+            width: 100%;
+          }
+
+          #input-email, #input-hotel{
+            width: 100%;
+          }
+
+          .check-in-out{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            #input-check-in, #input-check-out{
+              width: 75%;
+            }
+          }
+
+          .input-counts{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+
+            .count-container{
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              .count-dropdown{
+                display: block;
+                width: 75%;
+                margin-left: 0;
+              }
+            }
+
+
+          }
+
+          #input-message{
+          }
+        }
+
+        .submit-booking-form{
+        }
+      }
+    }
+  }
+}
+
+//Medium tablet
+@media screen and (max-width: 767px){
+
+}
+
+@media screen and (max-width: 576px){
+  .booking-form-container{
+    margin-top: 2%;
+  }
+}

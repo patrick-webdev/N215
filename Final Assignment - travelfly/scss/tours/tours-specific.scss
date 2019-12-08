@@ -1,0 +1,137 @@
+.tours-specific-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .header{
+    height: 413px;
+    width: 80%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 27.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .header-title{
+      font-family: "Roboto";
+      font-size: 80px;
+      color: $color-white;
+      margin: 2%;
+      .country-name{
+        text-transform: capitalize;
+      }
+    }
+    .header-price{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      text-transform: uppercase;
+      color: $color-white;
+      font-size: 30px;
+      margin-bottom: -5px;
+    }
+  }
+
+  .header-israel{
+    @include tour-background("tour-01.jpg");
+  }
+  .header-usa{
+    @include tour-background("tour-02.jpg");
+    background-color: blue;
+  }
+  .header-aus{
+    @include tour-background("tour-03.jpg");
+  }
+  .header-nz{
+    @include tour-background("tour-04.jpg");
+  }
+  .header-france{
+    @include tour-background("tour-05.jpg");
+  }
+  .header-egypt{
+    @include tour-background("tour-06.jpg");
+  }
+  .header-japan{
+    @include tour-background("tour-07.jpg");
+  }
+  .header-canada{
+    @include tour-background("tour-08.jpg");
+  }
+  .header-uae{
+    @include tour-background("tour-09.jpg");
+  }
+
+  .preview-container{
+    width: 80%;
+    margin: 2em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img{
+      height: 347px;
+      width: 30%;
+      object-fit: cover;
+    }
+  }
+
+  .day_outline{
+    width: 80%;
+
+    .day-title{
+      font-family: "Roboto";
+      font-size: 60px;
+
+      .underline{
+        border-bottom: 2px solid $color-black;
+      }
+    }
+    .day-content{
+      margin: 2em 0;
+    }
+  }
+
+  .book-now-button{
+    background-color: $color-blue;
+    display: block;
+    height: 40px;
+    width: 133px;
+    border: none;
+    border-radius: 25px;
+    color: $color-white;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 56px;
+  }
+}
+
+//Viewport sizes used by Bootstrap and recommended by Adobe.
+//https://getbootstrap.com/docs/4.4/layout/overview/
+//https://docs.adobe.com/content/help/en/target/using/experiences/vec/mobile-viewports.html
+
+//Large tablet
+@media screen and (max-width: 991px){
+
+}
+
+//Medium tablet
+@media screen and (max-width: 767px){
+}
+
+
+@media screen and (max-width: 576px){
+  .tours-specific-container{
+    .header{
+      .header-title{
+        text-align: center;
+        .country-name{
+        }
+      }
+      .header-price{
+        display: none;
+      }
+    }
+  }
+}

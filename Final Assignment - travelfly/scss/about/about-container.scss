@@ -1,0 +1,42 @@
+.about-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .about{
+    margin-top: 8%;
+    width: 80%;
+    .about-title{
+      font-family: "Roboto";
+      font-size: 60px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+
+      .underline{
+        border-bottom: 2px solid $color-black;
+      }
+    }
+
+    .about-content{
+
+    }
+  }
+}
+
+//Viewport sizes used by Bootstrap and recommended by Adobe.
+//https://getbootstrap.com/docs/4.4/layout/overview/
+//https://docs.adobe.com/content/help/en/target/using/experiences/vec/mobile-viewports.html
+
+//Large tablet
+@media screen and (max-width: 991px){
+
+}
+
+//Medium tablet
+@media screen and (max-width: 767px){
+
+}
+
+@media screen and (max-width: 576px){
+
+}
